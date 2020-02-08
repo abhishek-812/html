@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h2>Sign Up Form</h2>
+   <form method="post" action="">
+    <table >
+    	
+    	<tr height="40px">
+         <td>
+   	    <label for="firstname">
+   	 		Firstname: <input type="text" id="firstname" name="firstname" placeholder="firstname" required>
+   	 	</label></td>
+   	 	<td><label for="lastname">
+   	 		Lastname: <input type="text" id="lastname" name="lastname" placeholder="lastname" required>
+   	 	</label></td>
+        </tr>
+        
+        
+        <tr height="40px">
+     	<td>
+   	  
+   	 	<label for="email">
+   	 		Email:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" id="email" name="email" placeholder="email" required>
+   	 	</label></td>
+   	 	<td><label for="password">
+   	 		Password:  <input type="password" id="password" name="password"  title="Please enter at least one number and one uppercase and lowercase letter atleast one special symbol and length should be 8-12" minlength="8" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="password" required>
+   	 	</label></td>
+     
+     </tr>
+     <tr height="40px">
+     	<td>
+     
+   	 	<label for="file">
+   	 		Image: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="file" id="file" name="file" required>
+   	 	</label>
+      </td>
+       <td>
+      
+   	 	<label for="date">
+   	 		DOB:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="date"  id="date" name="date" required>
+   	 	</label>
+   	   </td>
+     </tr>
+   	   <tr height="40px">
+     	<td>
+     
+   	 	<label for="text">
+   	 		Mobile No.: <input type="text" name="text" size="1" value="+91" disabled="disabled"><input type="text"  id="text" name="text" title="Enter your valid mobile number" minlength="10" maxlength="10" size="8"  pattern="[789][0-9]{9}" >
+   	 	</label>
+      </td>
+       <td>
+        <label for="radio">
+   	 	Gender      : <input type="radio" id="radio" name="radio">Male&nbsp;&nbsp;<input type="radio" name="radio" required>Female</label>&nbsp;&nbsp;<input type="radio" name="radio" required>Other
+   	   </td>
+   	  </tr>
+</table>
+   	 <p><input type="checkbox" name="checkbox">I agree Terms & Condition</p>
+      <button type="Submit">Sign Up</button>
+</form>
+
+   	   </body>
+</html>
